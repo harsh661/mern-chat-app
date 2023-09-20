@@ -1,11 +1,92 @@
+:root {
+  --body-color: #5865f2;
+  --main-container: #313338;
+  --input-dark: #1e1f22;
+  --off-white: #b5bac1;
+}
+
 :root,
 body,
 html {
   height: 100%;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
   height: 100%;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #242424;
+}
+
+.main_container {
+  background-color: var(--body-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.join_form {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--main-container);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  gap: 20px;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+label {
+  color: var(--off-white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input {
+  background: var(--input-dark);
+  padding: 10px;
+  width: 100%;
+  color: var(--off-white);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.input:focus {
+  outline: 1px solid var(--off-white);
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: var(--body-color);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+
+.button:hover {
+  background: #414dca;
 }
