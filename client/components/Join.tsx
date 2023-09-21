@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import Heading from "./Heading"
 
 const Join = () => {
   const [userName, setUserName] = useState<string>("")
@@ -8,7 +9,7 @@ const Join = () => {
   return (
     <div className="main_container">
       <div className="join_form">
-        <h1 className="heading">Join a chat</h1>
+        <Heading title="Join a chat" subtitle="Please enter your name and room id"/>
         <div className="input_wrapper">
           <label htmlFor="name">Name</label>
           <input

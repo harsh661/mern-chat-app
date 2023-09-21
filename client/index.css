@@ -31,10 +31,22 @@ html {
   justify-content: center;
 }
 
+.heading_wrapper {
+  padding: 10px auto;
+}
+
 .heading {
   font-size: 24px;
   font-weight: 600;
   color: #fff;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: var(--off-white);
+  padding-top: 5px;
 }
 
 .join_form {
